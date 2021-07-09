@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="24px" height="24px" viewBox="0 0 24 24" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 51.3 (57544) - http://www.bohemiancoding.com/sketch -->
+    <title>Icons/Chevron/Back/M</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <path d="M16.00025,21.00025 C15.74425,21.00025 15.48825,20.90225 15.29325,20.70725 L7.29325,12.70725 C6.90225,12.31625 6.90225,11.68425 7.29325,11.29325 L15.29325,3.29325 C15.68425,2.90225 16.31625,2.90225 16.70725,3.29325 C17.09825,3.68425 17.09825,4.31625 16.70725,4.70725 L9.41425,12.00025 L16.70725,19.29325 C17.09825,19.68425 17.09825,20.31625 16.70725,20.70725 C16.51225,20.90225 16.25625,21.00025 16.00025,21.00025" id="path-1"></path>
+    </defs>
+    <g id="Icons/Chevron/Back/M" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <mask id="mask-2" fill="white">
+            <use xlink:href="#path-1"></use>
+        </mask>
+        <use id="Fill-1" fill="#000000" xlink:href="#path-1"></use>
+        <g id="Colors/Grey/Grey-1" mask="url(#mask-2)" fill="#2E2D37">
+            <rect id="Rectangle" x="0" y="0" width="24" height="24"></rect>
+        </g>
+    </g>
+</svg>
