@@ -31,6 +31,8 @@ export function SearchBox() {
     const [priceSelect, setPriceSelect] = useState('');
     const [versionSelect, setVersionSelect] = useState('Todas');
 
+    const { distances, makes, models, years, prices, versions, searchModels, searchVersions } = useSearchs();
+
     const handleDistanceSelection = useCallback((value: number) => {
         setDistanceSelect(value + 'km');
     }, []);
@@ -43,7 +45,7 @@ export function SearchBox() {
         if (make) {
             searchModels(make.ID);
         }
-    }, []);
+    }, [makes, searchModels]);
 
     const handleModelSelection = useCallback((value: string) => {
         setModelSelect(value);
@@ -52,7 +54,7 @@ export function SearchBox() {
         if (model) {
             searchVersions(model.ID);
         }
-    }, []);
+    }, [models, searchVersions]);
 
     const handleYearSelection = useCallback((value: number) => {
         setYearSelect(value);
@@ -89,8 +91,6 @@ export function SearchBox() {
 
         handleMakeSelection('Todas');
     }, []);
-
-    const { distances, makes, models, years, prices, versions, searchModels, searchVersions } = useSearchs();
     
     return (
         <Container>

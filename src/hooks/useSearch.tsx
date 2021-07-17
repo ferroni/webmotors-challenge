@@ -1,5 +1,4 @@
 import { createContext, ReactNode, useEffect, useState, useContext, useCallback } from 'react'
-import { MOCK_MAKES } from '../mocks/data';
 import { api } from '../services/api';
 
 interface Make {
@@ -86,13 +85,9 @@ export function SearchsProvider({children}: SearchProviderProps) {
 
     const [vehicles, setVehicles] = useState<Vehicle[]>([]);
     
-    /*useEffect(() => {
+    useEffect(() => {
         api.get('Make')
         .then(response => setMakes([...makes, ...response.data]))
-    }, []);*/
-
-    useEffect(() => {
-        setMakes([...makes, ...MOCK_MAKES]);
     }, []);
 
     const searchModels = useCallback(async (makeId: number) => {
